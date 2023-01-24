@@ -145,6 +145,33 @@
         </div>
       </div>
     </div>
+    <div class="benefits-container">
+      <div class="benefit-container -dark">
+        <h1 class="title">Atlantis is Loved</h1>
+        <div class="benefit">
+          <div class="logo">
+            <div class="image">
+              <img src="/hero.png">
+            </div>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <img src="/hero.png">
+            </div>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <img src="/hero.png">
+            </div>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <img src="/hero.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="home getting-started-footer">
       <div class="hero">
         <p class="action" v-if="data.actionText && data.actionLink">
@@ -358,6 +385,16 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        .logo {
+          flex-grow: 1;
+          .image {
+            padding: 40px;
+            text-align: center;
+            img {
+              max-height: 120px;
+            }
+          }
+        }
         .item {
           flex-basis: 50%;
           flex-grow: 1;
